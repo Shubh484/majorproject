@@ -1,5 +1,6 @@
 import React from "react";
 import "./componentcss.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -14,13 +15,13 @@ export default function Login() {
           Geofencing
         </h1>
 
-        <div className="flex flex-col align-baseline absolute top-[10rem] left-[33rem] w-[22rem] h-fit Shadow bg-slate-100  ">
+        <div className="flex flex-col align-baseline absolute top-[10rem] left-[33rem] w-[22rem] h-fit Shadow bg-gray-300  ">
           <label className="flex flex-col font-normal p-4">
             <p className="pb-2 font-medium">E-mail</p>{" "}
             <input type="email" placeholder="Enter your E-mail" name="E-mail" />
           </label>
           <br></br>
-          <lable className="flex flex-col font-normal pt-1 pl-4">
+          <lable className="flex flex-col font-normal  pl-4 pr-4">
             <p className="pb-2 font-medium">Password</p>{" "}
             <input
               type="password"
@@ -28,7 +29,10 @@ export default function Login() {
               name="password"
             />
           </lable>
-          <button className=" text-lg font-semibold pt-4 pb-4 mt-8 bg-green-600  ">
+          <button
+            type="submit"
+            className=" text-lg font-semibold pt-4 pb-4 mt-8 bg-green-600  "
+          >
             Log In
           </button>
         </div>
