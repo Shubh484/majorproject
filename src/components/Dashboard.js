@@ -1,15 +1,16 @@
 import React from "react";
+import Sidebar from "./Sidebar";
 
 const Dashboard = () => {
   return (
     <>
       <div className="container w-[80rem]">
-        <nav className="bg-blue-600 flex flex-row justify-between w-[79rem]">
+        <nav className="bg-white flex flex-row justify-between w-[79rem]">
           <div className="menu-icon ml-2">
             <a className="flex flex-col mt-2 ml-2 p-2" href="#">
-              <div className="w-8 h-[0.2rem] bg-white mb-1"></div>
-              <div className="w-8 h-[0.2rem] bg-white mb-1"></div>
-              <div className="w-8 h-[0.2rem] bg-white "></div>
+              <div className="w-8 h-[0.2rem] bg-black mb-1"></div>
+              <div className="w-8 h-[0.2rem] bg-black mb-1"></div>
+              <div className="w-8 h-[0.2rem] bg-black "></div>
             </a>
           </div>
           <div className="flex flex-row justify-end p-4 space-x-8">
@@ -62,6 +63,12 @@ const Dashboard = () => {
                 <li className="hover:underline underline-offset-8 hover:text-blue-600 hover:font-semibold">
                   History
                 </li>
+              </ul>
+
+              <ul className="property mt-2 ">
+                <li className="pt-4">Device:</li>
+                <li className="pt-4">From:</li>
+                <li className="pt-4">To:</li>
               </ul>
             </div>
             <div>
