@@ -4,11 +4,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
 import Dashboard from "./components/Dashboard";
 import Sidebar from "./components/Sidebar";
+import Sidebarcontent from "./components/Sidebarcontent";
+import LoginPage from "./components/Login1";
 
 function App() {
   return (
     <>
-      <Sidebar></Sidebar>
+      <LoginPage></LoginPage>
+      {/* <Sidebar></Sidebar> */}
+      {/* <Sidebarcontent></Sidebarcontent> */}
       {/* <Login></Login> */}
       {/* <Dashboard></Dashboard> */}
       {/* <BrowserRouter>
