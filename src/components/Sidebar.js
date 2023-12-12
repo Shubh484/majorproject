@@ -7,10 +7,10 @@ export default function Sidebar() {
     <>
       {isOpen ? (
         <button
-          className="fixed  z-30 flex items-center cursor-pointer left-10 top-6"
+          className="fixed  z-30 flex items-center cursor-pointer left-10 top-2"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <svg fill="#2563EB" viewBox="0 0 100 80" width="40" height="40">
+          <svg fill="#fff" viewBox="0 0 100 80" width="40" height="40">
             <rect width="100" height="10"></rect>
             <rect y="30" width="100" height="10"></rect>
             <rect y="60" width="100" height="10"></rect>
@@ -28,7 +28,7 @@ export default function Sidebar() {
       )}
       <div
         className={`top-0 left-[-35vw] fixed
-  bg-white w-[35vw] h-full p-10 ${
+  bg-white w-[35vw] h-full pt-10 ${
     isOpen ? "translate-x-0" : "translate-x-full"
   } ease-in-out duration-300`}
       >

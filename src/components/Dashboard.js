@@ -5,13 +5,14 @@ const Dashboard = () => {
   return (
     <>
       <div className="container w-[80rem]">
-        <nav className="bg-white flex flex-row justify-between w-[79rem]">
+        <nav className="bg-blue-600 flex flex-row justify-between w-[79rem]">
           <div className="menu-icon ml-2">
-            <a className="flex flex-col mt-2 ml-2 p-2" href="#">
+            {/* <a className="flex flex-col mt-2 ml-2 p-2" href="#">
               <div className="w-8 h-[0.2rem] bg-black mb-1"></div>
               <div className="w-8 h-[0.2rem] bg-black mb-1"></div>
               <div className="w-8 h-[0.2rem] bg-black "></div>
-            </a>
+            </a> */}
+            <Sidebar></Sidebar>
           </div>
           <div className="flex flex-row justify-end p-4 space-x-8">
             <img className="w-6" src="search.png"></img>
@@ -52,7 +53,7 @@ const Dashboard = () => {
         </section>
         <section className="Map mt-2">
           <div className="Map flex flex-row">
-            <div className="bar">
+            {/* <div className="bar">
               <ul className="flex flex-row justify-between w-[14rem] ml-2 mr-2">
                 <li className="hover:underline underline-offset-8 hover:text-blue-600 hover:font-semibold">
                   Object
@@ -70,10 +71,10 @@ const Dashboard = () => {
                 <li className="pt-4">From:</li>
                 <li className="pt-4">To:</li>
               </ul>
-            </div>
+            </div> */}
             <div>
               <iframe
-                className="w-[64rem]"
+                className="w-screen"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205857.80002173755!2d77.34777499677017!3d28.50170124568354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cea64b8f89aef%3A0xec0ccabb5317962e!2sGreater%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1702279825567!5m2!1sen!2sin"
                 width="600"
                 height="450"

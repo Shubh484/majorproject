@@ -10,11 +10,11 @@ import LoginPage from "./components/Login1";
 function App() {
   return (
     <>
-      <LoginPage></LoginPage>
+      {/* <LoginPage></LoginPage> */}
       {/* <Sidebar></Sidebar> */}
       {/* <Sidebarcontent></Sidebarcontent> */}
       {/* <Login></Login> */}
-      {/* <Dashboard></Dashboard> */}
+      <Dashboard></Dashboard>
       {/* <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />}>
